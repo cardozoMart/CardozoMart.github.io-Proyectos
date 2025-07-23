@@ -1,0 +1,297 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #dcecfb;
+    font-family: "Inter", sans-serif;
+}
+
+
+/*Barra de navegacion*/
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(182, 222, 255);
+}
+
+.container-items{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: end;
+    flex-direction: row;
+    background-color: rgb(182, 222, 255);
+}
+
+.items {
+    margin: 30px 80px 10px 60px;
+    font-size: 150%;
+    font-weight: bold;
+    color: rgb(62, 108, 148);
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 2%;
+}
+
+.items:hover{
+    color: rgb(182, 222, 255);
+    background-color: rgb(62, 108, 148);
+    padding: 2%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 50px;
+
+}
+ nav a{
+    text-decoration: none
+ }
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+/* SOBRE MI */
+
+.container-overme{
+    width: 80%;
+    display: flex;
+    justify-self: center;
+    background-color: rgb(62, 108, 148);
+    margin-top: 2%;
+    padding-bottom: 2%;
+    color: rgb(182, 222, 255);
+    background-image: url('./patron\ 2.png');
+}
+
+.container-overme h2{
+    font-size: 350%;
+    font-weight: bold;
+    justify-self: center;
+    margin: 3%;
+    position: relative;
+    z-index: 3;
+}
+
+.container-overme h3{
+    font-size: 250%;
+    font-weight: 700;
+    margin: 0 0 0 50px;
+    position: relative;
+    z-index: 3;
+}
+
+.container-overme p{
+    justify-self: flex-start;
+    width: 50%;
+    margin: 3.2%;
+    position: relative;
+    z-index: 4;
+    font-size: 100%;
+}
+
+.img-perfil{
+    position: absolute;
+    top: 30%;
+    right: 12%;
+    width: 20%;
+    border-radius: 200px;
+    z-index: 2;
+}
+
+/*Proyectos*/
+
+.container-proyectos{
+    width: 80%;
+    justify-self: center;
+    justify-content: center;
+    margin: 40px 0 30px 0;
+}
+
+.container-proyectos h2{
+    display: flex;
+    justify-self: center;
+    color: rgb(62, 108, 148);
+    font-size: 250%;
+    font-weight: 800;
+}
+.proyect-one,
+.proyect-two,
+.proyect-three,
+.proyect-four{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(62, 108, 148);
+    padding: 2%;
+    color: rgb(182, 222, 255);
+    background-image: url('./patron\ 2.png');
+}
+
+.proyect-one h4,
+.proyect-two h4,
+.proyect-three h4,
+.proyect-four h4{
+    font-size: 250%;
+    font-weight: 600;
+}
+
+.proyect-one p,
+.proyect-two p,
+.proyect-three p,
+.proyect-four p{
+    margin: 20px 0 30px 0;
+    width: 75%;
+}
+
+.carousel-item h5{
+    width: 100%;
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+.carousel-item p{
+    width: 100%;
+    font-weight: bold;
+
+}
+.proyect-two,
+.proyect-three,
+.proyect-four{
+
+    margin-top: 1%;
+}
+
+.carousel {
+  max-width: 600px;
+  margin: auto;
+}
+
+.carousel-item img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+ 
+/*Footer*/
+footer{
+    width: 100%;
+    background-color: rgb(182, 222, 255);
+    padding: 2%;
+    margin-top: 3%;
+    justify-self: center;
+}
+
+footer p{
+ font-size: 250%;
+ justify-self: center;
+ font-weight: 800;
+ color: rgb(182, 222, 255);
+}
+
+footer i{
+    color: rgb(182, 222, 255);
+    margin:0 20px 15px 20px;
+        justify-self: center;
+}
+
+footer a{
+    color: rgb(182, 222, 255);
+    font-size: 150%;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.footer-red{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+
+}
+/*footer p:hover{
+    color: rgb(62, 108, 148);
+    font-size: 280%;
+    background-color: rgb(182, 222, 255);
+    border-radius: 50px;
+    padding: 1%;
+    
+}*/
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+.container-items {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .items {
+    margin: 10px 0;
+    font-size: 120%;
+
+  }
+
+  .container-overme {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .img-perfil {
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 48%;
+    right: 10%;
+  }
+
+.carousel {
+  max-width: 500px;
+  margin: auto;
+  width: 95%;
+}
+
+.carousel-item img {
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.container-proyectos{
+    width: 95%;
+    justify-self: center;
+    justify-content: center;
+    margin: 40px 0 30px 0;
+}
+
+
+.items {
+    margin: 30px 80px 10px 60px;
+    font-size: 150%;
+    font-weight: bold;
+    color: rgb(62, 108, 148);
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+}
