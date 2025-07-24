@@ -252,13 +252,30 @@ footer a{
     width: 100%;
  }
 
+ .container-overme h3{
+    font-size: 140%;
+    font-weight: 700;
+    margin: 0 0 0 0;
+    justify-self: center;
+    position: relative;
+    z-index: 3;
+}
+
+ .container-overme h2{
+    font-size: 280%;
+    font-weight: bold;
+    justify-self: center;
+    margin: 3%;
+    position: relative;
+    z-index: 3;
+}
 
   .img-perfil {
-    width: 50%;
+    width: 60%;
     border-radius: 50%;
     position: absolute;
-    top: 112%;
-    right: 25%;
+    top: 109%;
+    right: 20%;
 
   }
 
@@ -294,14 +311,14 @@ footer a{
 
 
 .carousel {
-  max-width: 600px;
+  max-width: 550px;
 margin-top: 5%;
   width: 95%;
 justify-self: center;
 }
 
 .carousel-item img {
-  height: 205px;
+  height: 170px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -315,8 +332,8 @@ justify-self: center;
 
 
 .items {
-    margin: 30px 22px 10px 22px;
-    font-size: 110%;
+    margin: 30px 15px 10px 15px;
+    font-size: 98%;
     font-weight: bold;
     color: rgb(62, 108, 148);
     width: 100%;
